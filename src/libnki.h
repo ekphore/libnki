@@ -1,0 +1,7 @@
+// SPDX-FileCopyrightText: 2026 Gauvain "GovanifY" Roussel-Tarbouriech <gauvain@govanify.com>
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+#pragma once
+
+#include "libnki/model.h"
+#include "libnki/nki.h"

@@ -1,0 +1,23 @@
+// SPDX-FileCopyrightText: 2026 Gauvain "GovanifY" Roussel-Tarbouriech <gauvain@govanify.com>
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+#include "libnki/nki.h"
+
+#include <array>
+#include <cstddef>
+#include <span>
+
+namespace libnki {
+namespace {
+
+constexpr std::array<std::byte, @LIBNKI_BUNDLED_KEY_SIZE@> bundled_key{
+    @LIBNKI_BUNDLED_KEY_BYTES@
+};
+
+} // namespace
+
+std::span<const std::byte> bundled_encryption_private_key() noexcept {
+    return bundled_key;
+}
+
+} // namespace libnki
